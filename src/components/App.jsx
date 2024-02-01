@@ -30,7 +30,7 @@ export class App extends React.Component {
     }
 
     if (contacts.some((contact) => contact.name.toLowerCase() === name.trim().toLowerCase())) {
-      alert('Contact with this name already exists.');
+      alert('Contact with this name already exists!');
       return;
     }
 
@@ -55,7 +55,6 @@ export class App extends React.Component {
     }));
   };
 
-  
   render() {
     const { contacts, filter } = this.state;
     const filteredContacts = contacts.filter((contact) => contact.name.toLowerCase().includes(filter));
