@@ -55,6 +55,7 @@ export class App extends React.Component {
     }));
   };
 
+  
   render() {
     const { contacts, filter } = this.state;
     const filteredContacts = contacts.filter((contact) => contact.name.toLowerCase().includes(filter));
